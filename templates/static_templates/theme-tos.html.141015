@@ -8,10 +8,10 @@
 
 <%namespace name='static' file='/static_content.html'/>
 
-<%block name="title"><title>Términos de Servicio</title></%block>
+<%block name="title"><title>${_('Terms of Service')}</title></%block>
 
 <section class="static-container tos">
-    <h2>Términos de Servicio</h2>
+    <h2>${_('Terms of Service')}</h2>
 
     <p align="justify">Bienvenido. Por favor lea los términos de servicio, política de servicios y el Código de Honor antes de inscribirse en opencampus.utpl.edu.ec o en cualquier parte de este Sitio (contenidos y páginas situadas en el dominio web opencampus.utpl.edu.ec), incluyendo el acceso a cualquier material del curso, salas de chat u otros servicios electrónicos. Estas condiciones de servicio, política de privacidad y el Código de honor son Acuerdos entre usted y OpenCampus. Al utilizar este Sitio, usted acepta y acuerda estar legalmente sometido a los acuerdos propuestos, independientemente de si usted es un usuario registrado. Si usted no entiende o no desea estar obligado por los términos acordados, no debe utilizar el sitio.</p>
 <p align ="justify">OpenCampus se reserva el derecho de modificar las Condiciones de Servicio en cualquier momento que considere necesario. Los cambios de las Condiciones de Servicio se harán efectivos al momento de publicación en esta página. Al acceder al sitio luego de haber realizado cualquier cambio, usted acepta de forma prospectiva las condiciones de servicio modificado. Asegúrese de revisar periódicamente esta página para asegurarse de conocer las actuales condiciones de servicio. </p>
@@ -131,7 +131,7 @@ En caso de ser necesario el equipo técnico de OpenCampus realizará en la medid
 <p align="justify">Los recursos educativos utilizados en cada curso podrán licenciarse conforme lo decida el equipo docente, autor de los mismos. Del mismo modo, se debe mencionar a los autores de recursos educativos reutilizados.
 
 La licencia sugerida en Ecuador será Creative Commons, del tipo que decida el autor o autores de un recurso.</p> 
-    <h2 id="honor">Código de Honor</h2>
+    <h2 id="honor">${_('Honor Code')}</h2>
 
     <p align="justify">Al inscribirse en uno de los cursos de Open Campus, se une a la comunidad de esta iniciativa. Esta plataforma ofrece la oportunidad de alcanzar la mejor experiencia educativa utilizando la tecnología de Internet. Usted como parte de la comunidad contribuye al cumplimiento de los objetivos de Open Campus.
 
@@ -164,7 +164,7 @@ A menos que se indique lo contrario por el instructor(res) del curso, los estudi
 
 <script>
     $(document).ready(function() {
-        var print_tos = '<input type="button" value="Imprimir Términos de Servicio" class="print">';
+        var print_tos = '<input type="button" value="Print Terms of Service" class="print">';
         $('#content section.tos').prepend(print_tos).append(print_tos);
         $('#content section.tos input.print').click(function() {
             window.print();

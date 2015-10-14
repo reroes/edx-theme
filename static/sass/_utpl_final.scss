@@ -10,33 +10,39 @@
 //-----------------
 
 //Main Color Variables
-$main-color: #f7691f;
+//$main-color: #f7691f;
+$main-color: #336699;
 $dark-color: #ea281f; //Link Color
 $light-color: #f4e00c; //Selected Header BG Color, ie. calendar        ***Custom, not from palette***
-//$bg-color: #f7fe81; //Selected Content BG Color, ie. calendar          ***Custom, not from palette***
-$bg-color: blue; //Selected Content BG Color, ie. calendar          ***Custom, not from palette***
+$bg-color: #f7fe81; //Selected Content BG Color, ie. calendar          ***Custom, not from palette***
+//$bg-color: #003366; //Selected Content BG Color, ie. calendar          ***Custom, not from palette***
 
 //Main BG Color Variables
-$main-bg: #822537;
-$main-bg-60: lighten($main-bg, 18.5%); //Main Border/HR Color
+$main-bg: #FF530D; //naranja
+$main-bg-60: lighten($main-bg, 18%); //Main Border/HR Color
 $main-bg-25: lighten($main-bg, 25%); 
 
 //Secondary Color Variables
-$secondary: #b5a4b7;
+//$secondary: #b5a4b7;
+$secondary: white; //fondo
 $secondary-50: lighten($secondary, 9%);
 $secondary-25: lighten($secondary, 20%); //Important Heading BG Color 
 
 //Gray Color Variables
-$gray: #3f3f3f; //Main Text Color
+//$gray: #3f3f3f; //Main Text Color
+$gray: #FF780D; //de la sobra
 $gray-75: lighten($gray, 18.25%); //Lighter Text Color
 
-$gray-3: #e9e9e9; //Block/Course BG Color
-$gray-2: #f2f2f2;
-$gray-1: #fbfbfb; //Main BG Color
+//$gray-3: #e9e9e9; //Block/Course BG Color
+$gray-3: #e9e9e9; //color del botón inscripción cerrada dentro del curso
+$gray-2: #f2f2f2; //color de las letras iniciar sesion
+//$gray-1: #fbfbfb; //Main BG Color
+$gray-1: #fdfaf7; //color de fondo
 $white: $gray-1;
 
-$black: #2e2e2e;
-$black-80: #585858;
+$black: #2e2e2e; //color de las letras de títulos <h1> y <p>
+//$black-80: #585858;
+$black-80: black;
 
 
 
