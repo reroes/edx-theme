@@ -38,6 +38,7 @@ $gray-3: #e9e9e9; //color del botón inscripción cerrada dentro del curso
 $gray-2: #f2f2f2; //color de las letras iniciar sesion
 //$gray-1: #fbfbfb; //Main BG Color
 $gray-1: #fdfaf7; //color de fondo
+//$gray-1: red;
 $white: $gray-1;
 
 $black: #2e2e2e; //color de las letras de títulos <h1> y <p>
@@ -75,7 +76,7 @@ $courseware-header-bg: transparentize(lighten($secondary, 18.5%), .25);
 $footer-bg: $secondary-25;
 $courseware-footer-border: 1px solid $main-bg-60;
 $courseware-footer-shadow: box-shadow(2px 1px 0 rgba(0, 0, 0, .1));
-$courseware-footer-margin: 50px;
+$courseware-footer-margin: 500px; // ------
 
 $faded-hr-image-1: linear-gradient($main-bg-60 0%, $main-bg-60);
 $faded-hr-image-2: linear-gradient($main-bg-60 0%, $main-bg-60);
@@ -194,7 +195,6 @@ $footer_margin: ($baseline/4) 0;
 //-----------------
 // $homepage-bg-image: url('../themes/default/images/sunrise.jpg');
 $homepage-bg-image: url('../themes/utpl_final/images/utpl-pano.jpg');
-
 $login-banner-image: none;
 $register-banner-image: none;
 
@@ -227,7 +227,7 @@ html {
 // Header Styling
 //-----------------
 .home>header {
-    height: 500px;
+     height: 350px !important;
 
     .outer-wrapper {
         padding: 120px 0 !important;
@@ -277,4 +277,19 @@ section.tos {
     .print {
         margin: 50px 0;
     }
+}
+
+//ESTILOS PROPIOS
+
+$labster-black: #000000;
+$labster-dark-blue: #16283a;
+$labster-blue: #1d354d;
+$labster-light-blue: #578fbf;
+$labster-yellow: #f6c218;
+$labster-white: #ffffff;
+$labster-green: #429b40;
+$labster-light-green: #54b551;
+
+header.global {
+    height: 93px !important;
 }
