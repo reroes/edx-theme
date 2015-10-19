@@ -24,8 +24,68 @@
       </nav>
     </div>
     <div class="references">
+      <span>Empowered by <a href="http://serendipity.utpl.edu.ec/">Serendipity</a>.</span>
+	<br/>
       <span>Built on <a href="http://code.edx.org">OpenEdX</a>.</span>
     </div>
+    <div class="copyright">
+	
+	<section class="courses-container">
+    		<section class="courses">
+      			<ul class="courses-listing1">
+        			<li class="courses-listing-item1"><div><iframe width=640" height="360" src="http://carbono.utpl.edu.ec:8080/widget/test/test.html#sthash.aGVoBX8y.TWOrgtDh.dpbs" frameborder="0" allowfullscreen></iframe></div></li>
+        			<li class="courses-listing-item1"><div><iframe width="340" height="200" src="https://sica.utpl.edu.ec/embed/groups" frameborder="0" allowfullscreen></iframe></div></li>
+        			<li class="courses-listing-item1">Noticia 3</li>
+		</section>
+	</section>
+    </div>
+    </hr>
+   <div class="copyright">
+  	<div class="carousel-wrapper" style="height: 400px;">
+		  <!--The carousel uses regular links to cycle through each item.
+		  The links actually target these display: none; spans so our page doesn't
+		  jump like it normally would when using jump links.-->
+		  <span id="target-item-1"></span>
+		  <span id="target-item-2"></span>
+		  <span id="target-item-3"></span>
+		  <!--Here are our carousel items.
+		  Each has a 'carousel-item' class, which we use for shared styling
+		  and an item-# class, which we use to control its opacity
+		  depending on which target-item-# is currently targeted-->
+		  <div class="carousel-item item-1">
+		    <!--We can add any content in here, just make sure that
+		    your .carousel-wrapper is big enough to hold all the content.-->
+		    <h2>Item 1</h2>
+		    <p>Content goes here.</p>
+  		    <img src="${static.url('themes/utpl_final/images/utpl-logo.png')}" height="80" alt="Home Page" />
+
+		    <!--Here are the links that control the carousel! Make sure
+		    the href of each one is pointing to the right target-item-#
+		    so that the carousel cycles in sequence.-->
+		    <a class="arrow arrow-prev" href="#target-item-3"></a>
+		    <a class="arrow arrow-next" href="#target-item-2"></a>
+		  </div>
+		  <!--And here are a couple more carousel items so that
+		  we have some content to scroll to. Notice the 'light' class?
+		  Royal blue is a pretty dark background color, so we'll add a CSS
+		  rule to make the text white if a carousel item has this class-->
+		  <div class="carousel-item item-2 light" style="background-color: royalblue;">
+		    <h2>Item 2</h2>
+		    <p>Content goes here.</p>
+  		    <img src="${static.url('themes/utpl_final/images/utpl-logo.png')}" height="80" alt="Home Page" />
+		    <a class="arrow arrow-prev" href="#target-item-1"></a>
+		    <a class="arrow arrow-next" href="#target-item-3"></a>
+		  </div>
+		  <div class="carousel-item item-3">
+		    <h2>Item 3</h2>
+		    <p>Content goes here.</p>
+  		    <img src="${static.url('themes/utpl_final/images/utpl-logo.png')}" height="80" alt="Home Page" />
+		    <a class="arrow arrow-prev" href="#target-item-2"></a>
+		    <a class="arrow arrow-next" href="#target-item-1"></a>
+		  </div>
+		</div>  
+   </div>
+    </hr>
 
     <div class="copyright">
         <p><span>

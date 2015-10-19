@@ -194,7 +194,7 @@ $footer_margin: ($baseline/4) 0;
 //  CSS BG Images
 //-----------------
 // $homepage-bg-image: url('../themes/default/images/sunrise.jpg');
-$homepage-bg-image: url('../themes/utpl_final/images/utpl-pano.jpg');
+$homepage-bg-image: url('../themes/utpl_final/images/img-pano.jpg');
 //$homepage-bg-image: url('http://serendipity.utpl.edu.ec/static/imgs/serendipity.jpg');
 $login-banner-image: none;
 $register-banner-image: none;
@@ -228,7 +228,7 @@ html {
 // Header Styling
 //-----------------
 .home>header {
-     height: 250px !important;
+     height: 300px !important;
 
     .outer-wrapper {
         padding: 120px 0 !important;
@@ -293,4 +293,114 @@ $labster-light-green: #54b551;
 
 header.global {
     height: 93px !important;
+}
+
+
+.home > header .title {
+    background: #fdfaf7 none repeat scroll 0 0;
+    //border: 1px solid #ff9469;
+    //box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.5);
+    //box-sizing: border-box;
+    min-height: 150px !important;
+    min-width: 700px !important;
+    margin-left: 50px !important;
+    padding: 0px 0px !important;
+    //position: relative;
+    transition: all 0.6s linear 0s !important;
+    vertical-align: top !important;
+}
+
+.home > header .media .hero {
+    //background: rgba(0, 0, 0, 0) url("../themes/utpl_final/images/logo-open-campus.png") no-repeat scroll center center / cover !important;
+    height: 70%;
+    background: #fdfaf7 url("../themes/utpl_final/images/logo-open-campus.png") no-repeat scroll center center / cover !important;
+}
+
+
+
+/* Here's where our carousel begins, with the main wrapper being
+relatively positioned, so that our absolutely positioned items are
+in the right place. */
+.carousel-wrapper {
+  position: relative;
+
+  /* Our absolutely positioned carousel items span the width and height of its parent. Were making them transparent by default so that they fade in when we cycle through them using the arrow links. */
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+
+    /* Did you notice the 50px left, right padding up above? It's so
+    we can position our arrow links! Each one will be 50px wide. Also, Im using empty links with a background image so that the links
+    look like arrows. Make sure you swap out that URL with an actual URL so that your arrow links arent just transparent rectangles. */
+    .arrow {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 50px;
+    height: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background: url("../themes/utpl_final/images/logo-open-campus.png") 50% 50% / 20px no-repeat;
+    //background: url("/carousel-arrow-dark.png") 50% 50% / 20px no-repeat;
+
+      /* Let's put our arrow to go back on the left. */
+      &.arrow-prev {
+        left: 0;
+      }
+
+      /* And our arrow to go forward on the right. Since I'm using the same arrow image for both my arrows, I'm rotating this one by 180 degrees so that it points in the right direction */
+      &.arrow-next {
+        right: 0;
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+      }
+    }
+
+    /* I really like how these carousel items look on a dark imag background, so if a .carousel-item div has the class 'light', we'll make its text color white, and use a white arrow instad of a dark gray one. Again, make sure this arrow image exists somewhere */
+    &.light {
+      color: white;
+
+      .arrow {
+        //background: url("/carousel-arrow-light.png") 50% 50% / 20px no-repeat;
+
+    	background: url("../themes/utpl_final/images/logo-open-campus.png") 50% 50% / 20px no-repeat;
+      }
+    }
+
+    /* Let's use using some media queries to resize the arrows on smaller devices.*/
+    @media (max-width: 480px) {
+      .arrow, &.light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+      }
+    }
+  }
+
+  /* Let's set our jump link targets display: none; so that we're not making the browser jump to the top of the carousel whenever a user clicks on one of our arrow links. This attribute selector will targe any element whose id starts with 'target-item'. */
+  [id^="target-item"] {
+    display: none;
+  }
+
+  .item-1 {
+    z-index: 2;
+    opacity: 1;
+  }
+
+  *:target ~ .item-1 {
+    opacity: 0;
+  }
+
+  #target-item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+  #target-item-2:target ~ .item-2, #target-item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+  }
 }
