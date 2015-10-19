@@ -195,6 +195,7 @@ $footer_margin: ($baseline/4) 0;
 //-----------------
 // $homepage-bg-image: url('../themes/default/images/sunrise.jpg');
 $homepage-bg-image: url('../themes/utpl_final/images/utpl-pano.jpg');
+//$homepage-bg-image: url('http://serendipity.utpl.edu.ec/static/imgs/serendipity.jpg');
 $login-banner-image: none;
 $register-banner-image: none;
 
@@ -227,7 +228,7 @@ html {
 // Header Styling
 //-----------------
 .home>header {
-     height: 350px !important;
+     height: 250px !important;
 
     .outer-wrapper {
         padding: 120px 0 !important;
