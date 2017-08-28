@@ -1,0 +1,174 @@
+## mako
+<%!
+  from django.conf import settings
+  from django.core.urlresolvers import reverse
+  from django.utils.translation import ugettext as _
+%>
+<%inherit file="/main.html" />
+
+<%namespace name='static' file='/static_content.html'/>
+
+<%block name="title"><title>Términos de Servicio</title></%block>
+
+<section class="static-container tos">
+    <h2>Términos de Servicio</h2>
+
+    <p align="justify">Bienvenido. Por favor lea los términos de servicio, política de servicios y el Código de Honor antes de inscribirse en opencampus.utpl.edu.ec o en cualquier parte de este Sitio (contenidos y páginas situadas en el dominio web opencampus.utpl.edu.ec), incluyendo el acceso a cualquier material del curso, salas de chat u otros servicios electrónicos. Estas condiciones de servicio, política de privacidad y el Código de honor son Acuerdos entre usted y OpenCampus. Al utilizar este Sitio, usted acepta y acuerda estar legalmente sometido a los acuerdos propuestos, independientemente de si usted es un usuario registrado. Si usted no entiende o no desea estar obligado por los términos acordados, no debe utilizar el sitio.</p>
+<p align ="justify">OpenCampus se reserva el derecho de modificar las Condiciones de Servicio en cualquier momento que considere necesario. Los cambios de las Condiciones de Servicio se harán efectivos al momento de publicación en esta página. Al acceder al sitio luego de haber realizado cualquier cambio, usted acepta de forma prospectiva las condiciones de servicio modificado. Asegúrese de revisar periódicamente esta página para asegurarse de conocer las actuales condiciones de servicio. </p>
+<p>&nbsp;</p>
+<h3>Descripción de la plataforma</h3>
+<p align="justify">Esta plataforma ofrece cursos en línea, desarrollados para la formación continua de quien desee prepararse en las distintas áreas de conocimiento. Los cursos se han elaborado con la respectiva planificación e incluyen todos los recursos necesarios para cumplir con la adquisición de competencias planteada.</p>
+<p align="justify">La aprobación de un curso se avalará con un certificado digital emitido por OpenCampus, y si el estudiante desea, puede obtener una certificación en formato impreso otorgado por OpenCampus y UTPL.</p>
+<p>&nbsp;</p>
+<h3>Lineamientos sobre la conducta en línea</h3>
+<p align="justify">Al momento en que usted se registra en esta plataforma, acepta que es responsable del uso que dará a este Sitio así como de las Publicaciones que realizará en el mismo. Se entiende por “Publicación” aquel contenido enviado, publicado, posteado o distribuido en esta plataforma por usted u otros usuarios del Sitio, se incluyen también los mensajes de foro, ediciones de wiki, notas, preguntas, comentarios videos y archivos que haya subido.</p>
+<p align="justify">Usted acepta que utilizará esta plataforma de conformidad con estas Condiciones de Servicio, el Código de Honor y las reglamentaciones legales relativas a derechos de autor y transmisión de datos técnicos.</p>
+
+<p align="justify">Este Sitio no debe utilizarse con la intención de dañar, inutilizar, sobrecargar o deteriorar la plataforma (servidor(es), red(es)). No puede intentar obtener acceso no autorizado, ni a otras cuentas, sistemas informáticos o redes conectadas con el servidor de esta plataforma a través medios ilícitos. No puede obtener o intentar cualquier material o información almacenada en esta plataforma, sus servidores o equipos asociados a menos de que haya sido puesto a su disposición.</p>
+
+<p align="justify">Queda prohibido estrictamente en este Sitio:</p>
+<ul>
+<li>Contenido que difame, hostigue o amenace a los demás</li>
+<li>Contenido que conlleve a actividades ilegales e incite a cometerlas</li>
+<li>Contenido que viole los derechos de propiedad intelectual</li>
+<li>Contenido profano, pornográfico, obsceno, indecente o ilegal</li>
+<li>Publicidad o cualquier forma de solicitud comercial</li>
+<li>Contenido relacionado con proselitismo político</li>
+<li>Software malicioso: Virus, troyanos, gusanos, malware, spyware o cualquier otro software similar, que dañe el funcionamiento de equipos de otro y de contenidos</li>
+<li>Contenido que contenga información intencionalmente indexada o escrito con la intención para engañar a otros.</li>
+</ul>
+<p>&nbsp;</p>
+<p align="justify">Por otra parte, se compromete a no tergiversar o falsificar identidad a pesar de que nuestra plataforma le permite a utilizar un nombre de usuario anónimo si no desea revelar su identidad.</p>
+<p>&nbsp;</p>
+<h3>Cuentas del Usuario</h3>
+
+<p align="justify">Para participar en las actividades de este Sitio, usted debe proporcionarnos su nombre, dirección de correo electrónico y contraseña de usuario para crear su cuenta (Cuenta de Usuario). Usted acepta mantener reservada esta información sin compartir el acceso a terceros. Al configurar su Cuenta de Usuario se le solicitará que introduzca información adicional opcional. Además, declara que la información proporcionada por usted es exacta y actual. Se compromete a mantener y actualizar su información periódicamente.
+
+<p align="justify">El equipo de OpenCampus se compromete a mantener la confidencialidad y seguridad de su información personal (puede consultar nuestra política de privacidad).</p>
+<p>&nbsp;</p>
+<h3>Sobre el uso el contenido publicado en el Sitio</h3>
+<p align="justify">La plataforma que utiliza Open Campus para sus MOOCs ha procurado que los contenidos sean accesibles y accesibles para el público en general. Los recursos publicados en la plataforma en su mayoría tienen licencia abierta de tipo Creative Commons, aún así, debe revisar por cada recurso: textos, exámenes, vídeo, imágenes y otros materiales de instrucción el tipo de licencia o protección que pudiere tener para asegurarse  si podrá darles otros usos además de su uso personal. </p>
+
+<p aling="justify">Usted se compromete a respetar los derechos de autor y otros avisos sobre el contenido publicado y al que tenga acceso en el Sitio.</p>
+
+<p>&nbsp;</p>
+<h3>Publicaciones del usuario</h3>
+
+<p align="justify">Las publicaciones que realice como usuario estarán disponibles para el público en general. Serán publicadas bajo licencia Creative commons 3.0 BY-NC-SA. </p>
+<p>&nbsp;</p>
+<h3>Certificados</h3>
+
+<p align="justify">Se puede emitir un certificado de la Institución promotora del MOOC, para aquellos estudiantes que han demostrado satisfactoriamente dominio sobre el material del curso. Los certificados serán emitidos por la institución que avala el curso, en el caso en que lo hayan autorizado desde su planificación. El otorgamiento de un certificado puede estar sometido al pago de un valor cuyo proceso de cancelación dependerá de cada institución avaladora del mismo y se publicará dentro de la presentación del curso.</p>
+<p>&nbsp;</p>
+<h3>Autenticación</h3>
+
+<p align=justify">Para autenticar su identidad en este Sitio, se requiere que nos proporcione una fotografía en la cual se lo pueda reconocer e identificar. Esta información estará sujeta a las política de privacidad y se utilizará únicamente para el fin de verificar su identidad.</p>
+<p>&nbsp;</p>
+<h3>Marcas</h3>
+<p align="justify">El uso de la marca Open Campus y todas las marcas derivadas, nombres logotipos y sellos son marcas de la entidad respectiva y/o miembros de la iniciativa OpenCampus. Por tanto, no puede utilizar estas marcas o sus variaciones sin el consentimiento legal del propietario, caso contrario se someterá a las leyes que rigen Propiedad Intelectual en este campo.</p>
+
+    <h2 id="privacy">${_('Privacy Policy')}</h2>
+
+    <p align="justify">OpenCampus con la finalidad de cuidar la confidencialidad y seguridad de su información ha desarrollado unos lineamientos que constituyen las Política de Privacidad. En esta política los términos “nosotros”, “nos” y “nuestro” se refieren a OpenCampus.
+
+Esta Política de Privacidad sólo se aplica a la información recogida a través de la plataforma OpenCampus y no se aplica a la información que se pueda obtener por otras vías (por ejemplo: a través de teléfono, fax, correo convencional).</p>
+<p>&nbsp;</p>
+<h3>Nombres de usuario y anuncios</h3>
+
+<p align="justify">Toda la información publicada por los usuarios tales como foros, wikis, comunicaciones públicas, comunicaciones entre los participantes, en las áreas del sitio que ha sido diseñadas para estos fines. Esta información puede ser visualizada y descargada por todas las personas que visiten la plataforma de OpenCampus. Por tanto se recomienda tomar las consideraciones necesarias para emitir sus criterios.</p>
+<p>&nbsp;</p>
+<h3>Consentimiento de uso de información fuera de su país de residencia</h3>
+
+<p align="justify">Al registrarse en esta plataforma, usted entiende y acepta de forma inequívoca, el uso, divulgación y conservación de información en el país sede de OpenCampus así como en otros países y territorios para los fines establecidos en esta Política de Privacidad y los Términos de Servicio.
+El usuario se somete a la recopilación, uso, divulgación y retención de su información personal por esta plataforma, tal como se describe en esta Política de Privacidad, incluyendo, pero no limitando la transferencia de sus datos personales entre OpenCampus y las terceras partes, afiliadas y subsidiarias descritas en esta Política de Privacidad.
+
+Si hubiere algún problema de violación a la privacidad de la información, se solicitará la ayuda del Departamento Legal de la Universidad Técnica Particular de Loja, auspiciante de OpenCampus 
+
+Si usted no está de acuerdo con los términos de esta Política de Privacidad, no debe acceder, navegar o registrarse en el sitio. Y si no desea revelar información personal solicitada para el registro, no se le podrá proporcionar los servicios de esta plataforma.</p>
+
+<p>&nbsp;</p>
+<h3>Información personal</h3>
+
+<p align="justify">Para esta política “Información Personal” significa cualquier información que nos pueda proporcionar un usuario acerca de su persona, a través de esta plataforma. Por ejemplo al registrar su cuenta de usuario deberá proporcionar información que incluye su nombre, información de contacto, sexo, fecha de nacimiento, ocupación, entre otros. Se registrará también el número de un documento de identidad que nos proporcione.
+
+Nos esforzamos por limitar la recolección de información personal, solicitando datos necesarios para satisfacer requisitos reglamentarios. En el caso de que usted solicite la compra de un certificado de la aprobación de un curso, se solicitará cierta información necesaria para autenticar su identidad, como se describe en los términos de servicio, requisito para emitir el certificado.
+
+OpenCampus no solicita información financiera, excepto al momento de comprar un certificado de aprobación, en cuyo caso se dirigirá a una unidad encargada de realizar este proceso para garantizar seguridad de su transacción.
+
+<p>&nbsp;</p>
+<h3>Qué información recopilamos y cómo la utilizamos</h3>
+
+<p align="justify">Recopilamos información que incluye: datos personales, como se indicó en el apartado anterior, cursos en los que se ha inscrito, certificado de pago, mensajes y/o participación en los foros públicos. También recopilamos información sobre uso, rendimiento y otros datos que sirvan para determinar patrones de aprendizaje de los participantes. Además se realiza un seguimiento de información que refleja la cantidad de visitas al sitio, orden de visitas, fecha en que el sitio fue visitado y los hipervínculos y controles de la interfaz que el usuario utilizó.<p>
+<p>&nbsp;</p>
+<h3>Uso y divulgación a terceros</h3>
+<p align="justify">Información recopilada a través de esta plataforma, se divulgará a terceros únicamente para fines de evaluación de aprendizaje y mejoramiento pedagógico de los cursos. Por lo tanto, sólo se divulgará la información que cumpla esta finalidad, manteniendo la privacidad de la información según la especificación explicada anteriormente.</p>
+
+<p>&nbsp;</p>
+<h3>Enlaces a otros sitios Web</h3>
+
+<p align="justify">Esta plataforma contiene enlaces a otros sitios Web publicados por terceros, incluyendo otros proveedores de contenidos, así como proveedores de servicios como aquellos que permitirán el pago de certificados en nombre de OpenCampus. Estos otros sitios no están bajo nuestro control y usted reconoce y acepta que no somos responsables de la recopilación y uso de información de dichos sitios de terceros, a menos que esta política de privacidad diga lo contrario. Por lo tanto le sugerimos tomar en cuenta al momento en que sea redireccionado a un sitio Web de terceros, es recomendable que revise las políticas de privacidad del sitio visitado y utilizado.</p>
+
+<p>&nbsp;</p>
+<h3>Seguridad</h3>
+<p align="justify">Esta plataforma dentro de su desarrollo tiene considerado un programa que protege la información personal que tenga en su posesión y bajo su control. Se ha considerado en esta política de privacidad la garantía de proporcionar seguridad a nivel de procesos y procedimientos administrativos, físicos y técnicos, que garanticen y protejan la confidencialidad, integridad y disponibilidad de la información personal que crea, recibe, mantiene o transmite esta plataforma. Sin embargo, como no existe un método de seguridad 100% seguro, no se garantiza seguridad absoluta.</p>
+<p>&nbsp;</p>
+<h3>Nuevas versiones de nuestra política de privacidad</h3>
+
+<p align="justify">Se realizarán revisiones periódicas de esta Política de Privacidad. Una vez que se publique una nueva versión se incluirán la fecha en que ha sido modificada. Se reitera que revise continuamente si hay algún cambio en esta política.</p>
+<p>&nbsp;</p>
+<h3>Consultas sobre estas Políticas de Privacidad</h3>
+
+<p align="justify">Si tiene una duda y desea consultar, estamos para responder a sus inquietudes. Puede comunicarse a través de opencampus@utpl.edu.ec</p>
+<p>&nbsp;</p>
+
+<h3>Políticas de accesibilidad</h3>
+<p align="justify">Open Campus procura la inclusión de una comunidad global de participantes. Para ello se optará por brindar los niveles de accesibilidad conforma a lo especificado por el W3C, teniendo como base las Directrices de Accesibilidad para el Contenido Web (WCAG 2.0 AA). 
+
+En caso de ser necesario el equipo técnico de OpenCampus realizará en la medida de lo posible la adaptación de los módulos para el cumplimiento de los niveles de accesibilidad necesarios para satisfacer las necesidades diversas de participantes con discapacidad</p>
+<p>&nbsp;</p>
+<h3>Licenciamiento de recursos utilizados</h3>
+
+<p align="justify">Los recursos educativos utilizados en cada curso podrán licenciarse conforme lo decida el equipo docente, autor de los mismos. Del mismo modo, se debe mencionar a los autores de recursos educativos reutilizados.
+
+La licencia sugerida en Ecuador será Creative Commons, del tipo que decida el autor o autores de un recurso.</p> 
+    <h2 id="honor">Código de Honor</h2>
+
+    <p align="justify">Al inscribirse en uno de los cursos de Open Campus, se une a la comunidad de esta iniciativa. Esta plataforma ofrece la oportunidad de alcanzar la mejor experiencia educativa utilizando la tecnología de Internet. Usted como parte de la comunidad contribuye al cumplimiento de los objetivos de Open Campus.
+
+Para participar en un curso debe estar de acuerdo con el Código de Honor, mismo que se publicará en el sitio Web de cada curso.</p>
+
+<p>&nbsp;</p>
+<h3>Promesa del Código de Honor</h3>
+
+<p align="justify">Al inscribirse en uno de los cursos de OpenCampus, está de acuerdo con:</p>
+<ul>
+<li>Realizar todas las actividades con su propio esfuerzo y solamente suyo. Sin utilizar trabajos realizados por terceros.</li>
+<li>Mantener una sola cuenta de usuario y no permitir que terceros utilicen sus datos de acceso.</li>
+<li>No participar en actividades ilícitas para mejorar sus resultados o perjudicar a otras personas.</li>
+<li>No publicar respuestas a problemas que se utilicen para evaluar el desempeño de otros participantes del curso.</li>
+</ul>
+<p>&nbsp;</p>
+A menos que se indique lo contrario por el instructor(res) del curso, los estudiantes podrán:
+<ul>
+<li>Colaborar con otros en los videos, ejercicios, tareas y demás actividades propuestas en el curso.</li>
+<li>Presentar ideas y trabajos escritos a los compañeros de aula u otras personas para hacer comentarios o críticas.</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Modificaciones del Código de Honor:</h3>
+<p align="justify">Se harán revisiones de este Código de Honor cada cierto tiempo. Cualquier modificación se hará efectivo después de su publicación en esta página. Al acceder al sitio usted automáticamente aceptará estar de acuerdo con dichas modificaciones, que tendrán como base siempre las políticas iniciales. Por tales razones, asegúrese de leer periódicamente este Código de Honor para conocer la versión actualizada.</p>
+
+    <h2 id="copyright">${_('Copyright')}</h2>
+
+    <p aling="justify">Se debe dar cumplimiento a la legislación que protege el Derecho de Autor, en caso de que se haya vulnerado estos derechos el usuario deberá comunicarse oportunamente con el equipo técnico de Open Campus.</p>
+</section>
+
+<script>
+    $(document).ready(function() {
+        var print_tos = '<input type="button" value="Imprimir Términos de Servicio" class="print">';
+        $('#content section.tos').prepend(print_tos).append(print_tos);
+        $('#content section.tos input.print').click(function() {
+            window.print();
+            return false;
+        });
+    });
+</script>

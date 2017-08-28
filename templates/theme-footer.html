@@ -13,32 +13,64 @@
     <div class="colophon">
       <nav class="nav-colophon">
         <ol>
-         <li><a href="${reverse('about')}">Acerca de</a></li>
+         <li><a href="${reverse('about')}">Acerca de</a>|</li>
          <!--  <li><a href="${reverse('about')}#careers">Careers</a></li> -->
-          <li><a href="${reverse('about')}#contact">Contactos</a></li>
-          <li><a href="${reverse('tos')}">Términos de Servicio</a></li>
-          <li><a href="${reverse('tos')}#privacy">Políticas de Privacidad</a></li>
-          <li><a href="${reverse('tos')}#honor">Código de Honor</a></li>
+          <li><a href="${reverse('about')}#contact">Contactos</a>|</li>
+          <li><a href="${reverse('tos')}">Términos de Servicio</a>|</li>
+          <li><a href="${reverse('tos')}#privacy">Políticas de Privacidad</a>|</li>
+          <li><a href="${reverse('tos')}#honor">Código de Honor</a>|</li>
+          <li><a href="${reverse('partners')}">Partners</a>|</li>
+	  <li><a href="http://soer.utpl.edu.ec/" target="_blank">Docentes</a>|</li>
+	  <li><a href="${reverse('faq')}">Preguntas Frecuentes</a>|</li>
           <!-- <li><a href="${reverse('tos')}#copyright">Derechos de Autor</a></li> -->
         </ol>
       </nav>
     </div>
     <div class="references">
-      <span>Empowered by <a href="http://serendipity.utpl.edu.ec/">Serendipity</a>.</span>
-	<br/>
-      <span>Built on <a href="http://code.edx.org">OpenEdX</a>.</span>
     </div>
     
-
-       
     <div class="copyright">
-        <p><span>
-            ${_('Copyright {year}. All rights reserved.').format(
-                year=date.today().year
-            )}
-        </span></p>
         <div class="clear"></div>
-        <p>&copy; <span class="fn org">UTPL</span>, <span class="adr"> <span class="locality">San Cayetano Alto - Loja</span>, <span class="region">Ecuador</span> <span class="postal-code">Línea Gratuita 1800 0075 8875</span> </span></p>
+	<div class="pie-1">
+		<hr/>
+		<div class="colophon-dos">
+			<span>
+        	    ${_('{year}.').format(
+        	        year=date.today().year
+        	    )}
+        		</span><hr/> 
+			<span class="adr"> <span class="locality">San Cayetano Alto - Loja</span>, <span class="region">Ecuador</span> </span>
+			<hr/>
+			<span class="adr">Línea Gratuita: 1800 8875 88</span>
+			<hr/>
+			<span class="adr"><a href="mailto:opencampus@utpl.edu.ec">opencampus@utpl.edu.ec</a> </span>
+		</div>
+		<div class="colophon-tres">
+			<table border="0" width=100%>
+            		<tr>
+                		<td>
+					<span>
+        				Bajo licencia<br/><br/><a href="http://mirrors.creativecommons.org/" target="_blank"> <img alt="cc" src="${static.url('themes/utpl_final/images/LicenciaCC.png')}" width=115px height=45px></a> 
+					</span>
+				</td>
+				<td>
+					<span>
+        				Empowered by<br/><br/><a href="http://serendipity.utpl.edu.ec/" target="_blank"><img alt="cc" src="${static.url('themes/utpl_final/images/Serendipity.png')}" width=115px height=45px></a>
+					</span>
+				</td>
+				<td>
+					<span>
+        				Built by<br/><br/><a href="https://open.edx.org/" target"_blank"><img alt="cc" src="${static.url('themes/utpl_final/images/OpenEdx.png')}" width=115px height=45px></a>
+					</span>
+				</td>
+            		</tr>
+			</table>
+	
+		</div>
+	</div>
+
+
+
 
     </div>
   </footer>

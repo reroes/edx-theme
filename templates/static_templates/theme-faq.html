@@ -1,0 +1,48 @@
+## mako
+<%!
+  from django.conf import settings
+  from django.core.urlresolvers import reverse
+  from django.utils.translation import ugettext as _
+%>
+<%inherit file="/main.html" />
+
+<%namespace name='static' file='/static_content.html'/>
+
+
+<section class="texto-info">
+<h2><b>PREGUNTAS FRECUENTES</b></h2>
+
+<p>&nbsp;</p>
+<h3><li>¿Cómo son este tipo de cursos?</li></h3>
+<p class ="info">Estos cursos se desarrollan bajo una nueva modalidad de formación, con propuestas orientadas a la difusión web de contenidos, uso de recursos educativos abiertos y un plan de actividades de aprendizaje abierto a la colaboración y la participación masiva. Brindan el soporte Web necesario y su inscripción es libre para quienes deseen llevar a cabo el curso.</p>
+<p>&nbsp;</p>
+
+<h3><li>¿Este tipo de cursos tienen costo?</li></h3>
+<p class ="info">Estos cursos se desarrollan según la posibilidad de cada participante. No existen clases presenciales, sino que se publican una diversidad de recursos y actividades para el aprendizaje a través de la plataforma de OpenCampus.</p>
+<p>&nbsp;</p>
+
+<h3><li>Quiero matricularme en un curso que ya se llevó a cabo, ¿cómo puedo hacer para que se abra nuevamente si no está habilitada la inscripción?</li></h3>
+<p class ="info">Los cursos que ya se han llevado a cabo, pueden volver a realizarse en una nueva edición, esto se publicará oportunamente en la plataforma de OpenCampus.</p>
+<p>&nbsp;</p>
+
+<h3><li>¿Qué pasa si me matriculo en otro curso por error?</li></h3>
+<p class ="info">Para proceder a eliminar su registro, necesitamos el correo electrónico con el que se registró. Sus nombres y apellidos. Y principalmente el nombre dle curso al que se inscribió por error.</p>
+<p>&nbsp;</p>
+
+<h3><li>¿Qué pasa si me inscribí en un curso de la plataforma MOOCs UTPL?</li></h3>
+<p class ="info">Existe otro grupo de cursos, en la plataforma MOOCs UTPL, se llevan de la misma manera, pero los cursos son distintos (distintas temáticas).</p>
+<p>&nbsp;</p>
+
+<h3><li>¿Puedo tomar dos cursos?</li></h3>
+<p class ="info">No hay límite de cursos a tomar, están sujeros al tiempo que usted pueda invertir en ellos para aprender.</p>
+<p>&nbsp;</p>
+
+<h3><li>¿Cuánto cuesta el certificado?</li></h3>
+<p class ="info">Si usted aprobó el curso, recibirá un certificado de aprobación que es digital.</p>
+<p>&nbsp;</p>
+
+<h3><li>¿Qué significa "Esfuerzo estimado" en el recuadro de la descripción del curso?</li></h3>
+<p class ="info">Significa el esfuerzo semanal que debe invertir en horas de trabajo, es decir número de horas a la semana.</p>
+<p>&nbsp;</p>
+
+</section>

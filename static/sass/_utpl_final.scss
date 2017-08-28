@@ -12,7 +12,8 @@
 //Main Color Variables
 //$main-color: #f7691f;
 $main-color: #336699;
-$dark-color: #ea281f; //Link Color
+// $dark-color: #ea281f; //Link Color
+$dark-color: #585857; //Link Color personalizado utpl
 $light-color: #f4e00c; //Selected Header BG Color, ie. calendar        ***Custom, not from palette***
 $bg-color: #f7fe81; //Selected Content BG Color, ie. calendar          ***Custom, not from palette***
 //$bg-color: #003366; //Selected Content BG Color, ie. calendar          ***Custom, not from palette***
@@ -24,8 +25,8 @@ $main-bg-25: lighten($main-bg, 25%);
 
 //Secondary Color Variables
 //$secondary: #b5a4b7;
-//$secondary: white; //fondo
-$secondary: #fdfaf7;
+$secondary: #FEFEFD; //fondo - personalizado utpl #fdfaf7 #FDDAF7 cambiado por #FEFEFD
+//$secondary: #fdfaf7;
 $secondary-50: lighten($secondary, 9%);
 $secondary-25: lighten($secondary, 20%); //Important Heading BG Color 
 
@@ -38,7 +39,7 @@ $gray-75: lighten($gray, 18.25%); //Lighter Text Color
 $gray-3: #e9e9e9; //color del botón inscripción cerrada dentro del curso
 $gray-2: #f2f2f2; //color de las letras iniciar sesion
 //$gray-1: #fbfbfb; //Main BG Color
-$gray-1: #fdfaf7; //color de fondo
+$gray-1: #FEFEFD; //color de fondo
 //$gray-1: red;
 $white: $gray-1;
 
@@ -231,9 +232,11 @@ html {
 // Header Styling
 //-----------------
 .home>header {
-     height: 300px !important;
+     // height: 330px !important;
+     box-shadow: 0 !important;
 
     .outer-wrapper {
+	// height: 318px !important;
         padding: 0px 0px !important;
     }
 }
@@ -295,29 +298,46 @@ $labster-green: #429b40;
 $labster-light-green: #54b551;
 
 header.global {
-    height: 93px !important;
+    // height: 123px !important;
+    height: 100px !important;
 }
 
+h1.logo{
+	margin: -5px 39px 0 0 !important;
+}
 
+.menu-superior{
+	height: 10px !important;
+    	// margin: 0 auto !important;
+    	max-width: 1180px !important;
+    	padding: 10px 10px 0 !important;
+	margin-top: 5px;
+}
+
+.menu-superior > span > a{
+	color: #004370;
+}
+// menu superior
 .home > header .title {
-    background: #fdfaf7 none repeat scroll 0 0;
+    background: #FEFEFD none repeat scroll 0 0;
     //border: 1px solid #ff9469;
     //box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.5);
     //box-sizing: border-box;
-    min-height: 300px !important;
-    min-width: 700px !important;
+    // min-height: 300px !important;
+    // min-width: 700px !important;
     margin-left: 0px !important;
     padding: 0px 0px !important;
     //position: relative;
     transition: all 0.6s linear 0s !important;
     vertical-align: top !important;
     float: none !important;
+    width: 100% !important;
 }
 
 .home > header .media .hero {
     //background: rgba(0, 0, 0, 0) url("../themes/utpl_final/images/logo-open-campus.png") no-repeat scroll center center / cover !important;
     height: 70%;
-    background: #fdfaf7 url("../themes/utpl_final/images/logo-open-campus.png") no-repeat scroll center center / cover !important;
+    background: #FEFEFD url("../themes/utpl_final/images/logo-open-campus.png") no-repeat scroll center center / cover !important;
 }
 //CREACIÓN DE BLOQUES DE INDEX
 
@@ -347,20 +367,120 @@ header.global {
 
 .bloque4 {
     background: white none repeat scroll 0 0;
-    border: 1px solid #ff9469;
+    // border: 1px solid #ff9469;
     //box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.5);
     //box-sizing: border-box;
 }  
 
 .border_bloques {
-    background: #FFEBCD none repeat scroll 0 0 !important;
-    border: 1px solid #4682B4 !important;
+    // background: #FFEBCD none repeat scroll 0 0 !important;
+    background: white none repeat scroll 0 0 !important;
+    // border: 1px solid #4682B4 !important;
     //box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.5);
     //box-sizing: border-box;
 }
 
 .border_bloques > img {
    height: 100px;
+}
+
+// css para los titulos de los bloques
+.texto-titulo > h2 > span{
+	border: 0 solid #ff9469;
+    	border-radius: 0;
+    	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4) inset, 0 0 12px 0 rgba(0, 0, 0, 0.2);
+    	color: #000;
+    	letter-spacing: 1px;
+    	margin-bottom: 0;
+    	margin-top: -15px;
+    	padding: 10px 10px 8px;
+    	text-align: center;
+    	text-shadow: 0 1px rgba(255, 255, 255, 0.6);
+    	text-transform: uppercase;
+
+}
+
+.seccion-partners{
+	background:white;
+
+}
+
+.texto-titulo {
+	background:#FEFEFD; // #FDFAF7;
+}
+.texto-titulo > .titulo {
+	color: #585857; //#004370;
+    	font: 2.5em/1.4em "Lucida Grande","Open Sans",Verdana,Geneva,sans-serif,sans-serif;
+    	letter-spacing: 1px;
+    	margin-bottom: 10px;
+    	margin-top: 10px;
+    	text-align: center;
+    	text-transform: none;
+}
+
+// css para el texto de las páginas de información
+.texto-info > h2 {
+        //color: #004370;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;       
+        font-size: 18px;        
+	letter-spacing: 1px;
+        margin-bottom: 10px;
+        margin-top: 70px;
+        margin-left: 150px;
+        text-align: justify;
+        text-transform:uppercase;
+	font-weight: bold;
+}
+
+.texto-info > h3 {
+        //color: #004370;
+        //font-family: bold "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "Verdana", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+        letter-spacing: 0.5px;
+        margin-bottom: 10px;
+        //margin-top: 100px;
+        margin-left: 150px;
+	margin-right: 150px;
+        text-align: justify;
+        text-transform: none;
+}
+.texto-info > .info {
+	//font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;	
+	font-family: "Verdana", Arial, Helvetica, sans-serif;
+	font-size: 14px;   
+	font-style: normal;     
+	letter-spacing: 0.5px;
+	line-height: 20px;        
+	margin-bottom: 0px;
+        margin-top: 20px;
+	margin-right: 150px;
+	margin-left: 150px;
+        text-align: justify;
+        text-transform: none;
+}
+
+.colophon-dos {
+	float: left;
+    	width: 30%;
+	border-right: 2px solid;
+	padding: 20px;
+}
+
+.colophon-tres{
+	float: right;
+    	width: 50%;
+	padding: 60px;
+}
+
+.articulo-informacion {
+	border: 0px !important;
+	box-shadow: none !important;
+	max-height: 160px !important;
+}
+
+.cajas-informacion {
+	max-height: 160px !important;
 }
 
 //COURSES SEARCH UTPL
@@ -385,6 +505,7 @@ in the right place. */
     left: 0;
     right: 0;
     padding: 25px 50px;
+    height: 250px !important; /* cambio de la cabecera 23.11.2016
     opacity: 0;
     transition: all 0.5s ease-in-out;
 
@@ -457,3 +578,47 @@ in the right place. */
     opacity: 1;
   }
 }
+
+/* nuevo carrusel */
+
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      @import url(http://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+/* * {
+  box-sizing: border-box;
+}*/
+figure { 
+  margin: 0; background: #FEFEFD;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+
+div#captioned-gallery { 
+  width: 100%; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 30s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100%; height: auto; }
+figure.slider figure figcaption { 
+  position: absolute; bottom: 0;
+  background: rgba(0,0,0,0); // con 0,0,0,0.4 para que se vea la sobra
+  color: #fff; width: 100%;
+  font-size: 2rem; padding: .6rem; 
+}
+

@@ -1,0 +1,44 @@
+## mako
+<%!
+  from django.core.urlresolvers import reverse
+  from django.utils.translation import ugettext as _
+%>
+<%namespace name='static' file='/static_content.html'/>
+<%!
+  from datetime import date
+%>
+
+<div class="wrapper-footer">
+  <footer>
+    <div class="colophon">
+      <nav class="nav-colophon">
+        <ol>
+         <li><a href="${reverse('about')}">Acerca de</a></li>
+         <!--  <li><a href="${reverse('about')}#careers">Careers</a></li> -->
+          <li><a href="${reverse('about')}#contact">Contactos</a></li>
+          <li><a href="${reverse('tos')}">Términos de Servicio</a></li>
+          <li><a href="${reverse('tos')}#privacy">Políticas de Privacidad</a></li>
+          <li><a href="${reverse('tos')}#honor">Código de Honor</a></li>
+          <!-- <li><a href="${reverse('tos')}#copyright">Derechos de Autor</a></li> -->
+        </ol>
+      </nav>
+    </div>
+    <div class="references">
+      <span>Empowered by <a href="http://serendipity.utpl.edu.ec/">Serendipity</a>.</span>
+	<br/>
+      <span>Built on <a href="http://code.edx.org">OpenEdX</a>.</span>
+    </div>
+    
+
+    <div class="copyright">
+        <p><span>
+            ${_('Copyright {year}. All rights reserved.').format(
+                year=date.today().year
+            )}
+        </span></p>
+        <div class="clear"></div>
+        <p>&copy; <span class="fn org">UTPL</span>, <span class="adr"> <span class="locality">San Cayetano Alto - Loja</span>, <span class="region">Ecuador</span> <span class="postal-code">Línea Gratuita 1800 0075 8875</span> </span></p>
+
+    </div>
+  </footer>
+</div>

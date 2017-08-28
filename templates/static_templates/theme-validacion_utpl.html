@@ -1,0 +1,61 @@
+## mako
+<%!
+  from django.conf import settings
+  from django.core.urlresolvers import reverse
+  from django.utils.translation import ugettext as _
+%>
+<%inherit file="/main.html" />
+
+<%namespace name='static' file='/static_content.html'/>
+
+
+<section class="texto-info">
+<h2><b>VALIDACIÓN</b></h2>
+<p>&nbsp;</p>
+<h3><b>Estudiantes Universidad Técnica Particular de Loja</b></h3>
+	<p class="info">
+		Los estudiantes podrán validar el curso realizado, el cual será reconocido como una materia de libre configuración de 4 créditos mediante la realización de un examen de validación de conocimientos.
+	</p>
+	<p class="info">
+	Podrán inscribirse al examen  a partir de la fecha de inicio del MOOC y hasta 15 días antes de los exámenes de Modalidad Abierta, es decir, tendrán 15 días antes del examen presencial del primer bimestre, segundo bimestre y del examen final.
+	</p>
+	<p class="info">
+    El examen de validación tiene un costo de USD 88,00. Una vez aprobado, se deberá cancelar USD 8,00 por el trámite de ingreso de las calificaciones.
+	</p>
+	<p class="info">
+    Para mayor información sobre el proceso de validación haga clic <a href="http://distancia.utpl.edu.ec/validacion-conocimientos">aquí.</a>
+	</p>
+<p>&nbsp;</p>
+<h3><strong><span style="color:#B22222">Calendario de postulación</span></strong></h3>
+<p>&nbsp;</p>
+<p class="info">Presenta el <strong>trámite de </strong><span style="color:#B22222"><strong>Reconocimiento de Estudios</strong></span><span style="color:#008080"><strong> </strong></span><strong>por Validación de Conocimientos </strong>en las siguientes fechas:</p>
+	<ul class="info"><li><strong>Inscripción y pago:</strong> hasta el 27 de enero</li>
+	    <li><strong>Examen de validación:</strong> 4 y 5 de marzo</li>
+	</ul>
+<p class="info"> Quienes no aprobaron los cursos de <span style="color:#B22222"><strong><u>Competencias Específicas </u></strong></span>deben presentar el trámite en las siguientes fechas:</p>
+	<ul class="info"><li><strong>Inscripción y pago:</strong> 9 a 17 de febrero</li>
+	    <li><strong>Examen de validación:</strong> 4 y 5 de marzo</li>
+	    <li><strong>Resultados: </strong>15/marzo</li>
+	</ul>
+<p>&nbsp;</p>
+<h3><strong><span style="color:#B22222">Requisitos</span></strong></h3>
+<p class="info">Los <span style="color:#B22222"><strong>requisitos </strong></span>que debes presentar para el trámite de reconocimiento, en el Centro UTPL al que perteneces, son:</p>
+	<ul class="info"><li>Si no eres estudiante de la UTPL <strong>regístrate </strong>en el <a href="https://srv-si-001.utpl.edu.ec/SAO/Login.aspx?ReturnUrl=%2fSAO&amp;tag=admisiondistancia">Sistema Académico</a><a href="http://srv-si-001.utpl.edu.ec/SAO/Login.aspx?ReturnUrl=%2fSAO&amp;tag=admisiondistancia"> en línea</a> 
+	<ul class="info">
+	<li>En la opción <strong>Quiero registrarme</strong> completa todas los campos.</li>
+	<li>Acepta los términos y condiciones.</li>
+	<li>Tu usuario y contraseña se enviarán a tu mail. </li>
+	</ul></li>
+	<li>Ingresa tu usuario y contraseña en el Sistema académico.</li>
+	<li>Completa la información que te piden en el <a href="http://distancia.utpl.edu.ec/sites/default/files/files/FT_01_ValidacionConocimientos%281%29.pdf"><span style="color:rgb(0, 102, 255)"><strong>formulario de solicitud de validación de conocimientos</strong></span>.</a> Descárgalo <a href="http://distancia.utpl.edu.ec/sites/default/files/files/FT_01_ValidacionConocimientos%281%29.pdf">aquí</a>.</li>
+	<li>El trámite es personal, presenta todos los requisitos en Servicios Estudiantiles de la sede central en Loja o los Centros UTPL.</li>
+	<li>Paga el arancel vigente, previo a la generación de la pre-factura en el Centro UTPL. </li>
+	</ul>
+<p class="info"><strong>Importante:</strong></p>
+	<ul class="info">
+	<li>No es necesario que el componente se encuentre aprobado en otra titulación de la UTPL, ni en otra Institución de Educación Superior (IES).</li>
+	<li>Se puede validar hasta un máximo de 12 componentes durante un período académico, de acuerdo a las fechas establecidas por la Universidad.</li>
+	<li>El examen de validación de conocimientos no tiene opción de recalificación.</li>
+	<li>No debes realizar depósitos individuales a la cuenta de la UTPL, sino directamente con tu número de cédula.</li>
+	</ul>
+	
